@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins" , sans-serif;
+}
+
+
+
+/* header----------------------------------------------------------------- */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 8%;
+    z-index: 10;
+}
+
+.navbar_netflix {
+    height: 100%;
+    width: 200px;
+}
+
+.navbar_nav_items {
+    display: flex;
+    gap: 10px;
+}
+
+.netflix_logo {
+    width: 93%;
+    height: 100%;
+}
+
+.language_drop_down {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.dropdown_container {
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.signin_button {
+    border: #dc030f;
+    background-color: #dc030f ;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    height: 34px ;
+    width: 100px ;
+}
+
+/* main------------------------------------------------------------------- */
+
+.hero_bg_img_cont {
+    height: 92vh;
+    width: 100%;
+}
+
+.hero_bg_img {
+    height: 100%;
+    width: 100%;    
+    object-fit: cover;
+}
+
+.hero_bg_overlay {
+    inset: 0;
+    position: absolute;
+    width: 100%;
+    height: 92vh;
+    background: rgba(0, 0, 0, 0.6);;
+}
+
+.hero_card {
+    position: absolute;
+    top: 40%;
+    left: 15.5%;
+    right: 15.5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hero_title {
+    font-weight: 800;
+    font-size: 2.7rem;
+}
+
+.hero_subtitle{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.hero_desc {
+    font-size: 1.094rem;
+    font-weight: 400;
+}
+
+.email{
+    width: 450px;
+    height: 49px;
+    color: black;
+    padding: 0.25rem 0.5rem;
+    /* border-radius: 5px; */
+    border-color: white;
+}
+
+.get_started{
+    font-size: large;
+    width: 170px;
+    height: 50px;
+    background-color: #dc030f;
+    border: 1px solid #272525;
+    color: white;
+    /* border-radius: 5px; */
+}
+
+.separetion{
+    height: 11px;
+    background-color: gray  ;
+}
+
+/* section first  ----------------------------------------------------*/
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.sec-img {
+    width: 38vw;
+    position: relative;
+}
+
+.desc-1 h1{
+    font-size: 1.9rem;
+}
+
+.desc-1 h4{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.sec-img img{
+    position: relative;
+    z-index: 10;
+}
+
+.sec-img video{
+    position: absolute;
+    top: 100px;
+    left: 15%;
+}
+
+/* second img------------------------------------- */
+
+.first-second {
+    display: flex;
+    justify-content: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.sec-img-2 {
+    width: 50vw;
+    position: relative;
+    margin-left: -50px;
+}
+
+/* faqs------------------------------------------------ */
+
+.faq h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 35px;
+}
+
+.faqbox:hover{
+    background-color: #414141;
+}
+
+.faqbox svg{
+    filter: invert(1);
+}       
+
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(37, 36, 36);
+    padding: 15px;
+    max-width: 60vw;
+    margin: 9px auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* footer--------------------------------------------------------------- */
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+    margin-top: -35px;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+/* @media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+} */
+
+
+
+/* @media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+} */
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
